@@ -3,10 +3,11 @@ First, let us take a look at the change directory command.
 Psst. Why are wine experts called sommeliers? Because they suh-mell-uh-the-air
 
 1. ![Image](screenshots/Lab1A.PNG)  
+
    Here, we used the cd command with no arguments. This resulted in us leaving the directory.  
-2. ![Image](screenshots/Lab1B.PNG)  
+3. ![Image](screenshots/Lab1B.PNG)  
   Here we used the cd command with a path to a directory. This resulted in us entering that directory. 
-3. ![Image](screenshots/Lab1C.PNG)  
+4. ![Image](screenshots/Lab1C.PNG)  
    Here, we used the cd command with a path to file. This was not very smart of us since the cd feels about paths to files the same way i feel about midterms(not good). Thus, it resulted in an error.
 
 Now let's move onto the ls command(I always read this as 1s).
