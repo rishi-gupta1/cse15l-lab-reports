@@ -20,7 +20,7 @@ Here, we have some screenshots of `StringServer` in action. `HandleRequest()` ge
 
 Above, we can see the path to both the public and private key for my SSH key for logging into ieng6. Very cool.
 
- ![Image](screenshots/Lab2E.PNG) 
+ ![Image](screenshots/Lab2F.PNG) 
 
 Finally, we see me able to log in without needing to type in my password. Good thing it worked because I do not remember my password.
 
