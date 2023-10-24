@@ -1,6 +1,6 @@
 Hello, welcome to my second lab. Let's take a look at my code for `StringServer`.
 
-Psst. What's Blue and not heavy. (Scroll to the end for the answer)
+Psst. What's Blue and not heavy? (Scroll to the end for the answer)
 
 ## Part 1 - `StringServer`
 
