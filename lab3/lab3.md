@@ -159,6 +159,7 @@ In this example, we see all the lines without the letter "e". I feel like there 
   technical/plos/journal.pbio.0020101.txt:        look at you as if you are crazy. They see an idyllic, sentimental movie, with beautiful
   ```
 (crazy? I was crazy once)
+
 Above, we see how using `-r` allowed us to search a pattern across an entire directory rather than just one file. This saves a lot of time when having multiple files to search through and seems like another staple when using `grep`.
 
   ```
@@ -168,6 +169,7 @@ Above, we see how using `-r` allowed us to search a pattern across an entire dir
   technical/plos/journal.pbio.0030050.txt:        large hole at the base of the skull and the rubber snaps back into the shape of the skull”,
   ```
 (a rubber room)
+
 Again we see that `-r` allows to check all of the files in a directory. Looking through directories for key information is a lot easier since it can look through groups of text files rather than searching through them one by one. 
 
 4. `-l`
@@ -180,7 +182,8 @@ Again we see that `-r` allows to check all of the files in a directory. Looking 
   technical/biomed/1472-6793-2-11.txt
   technical/biomed/1476-511X-1-2.txt
   ```
-  (a rubber room with rats)
+(a rubber room with rats)
+  
 Funnily enough, I used `-r` in conjunction with `-l` to search the whole directory. `-l` returns the name of the file containing the line that matches the pattern rather than the line itself. This can be useful to see which files contain some key pattern if seeing the pattern is not necessary, which it often is not.
 
   ```
@@ -189,6 +192,7 @@ Funnily enough, I used `-r` in conjunction with `-l` to search the whole directo
   technical/911report/Chapter-3.txt
   ```
 (crazy?)
+
 Again, using `-l` returns all the files that match the pattern. If we are not using `-r`, we have to list out each file to check individually, which can be quite annoying. `-l` seems like another staple when using `grep`, but generally to be used with `-r` rather than listing all the files.
 
 And that was 4 different modifiers to `grep`. Wow time flies, huh? Well, this concludes my third lab. As always, sorry for the terrible jokes and I hope you have a great day!
