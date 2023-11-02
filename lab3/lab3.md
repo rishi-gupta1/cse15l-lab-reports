@@ -207,7 +207,7 @@ A necktarine!
 
   Works Cited(Chatgpt inputs and outputs)
 
-  Input: "Consider the commands less, find, and grep. For each of them, give me 4 interesting command-line options or alternate ways to use the command you chose. 
+  Input: "Consider the commands less, find, and grep. For each of them, give me 4 interesting command-line options or alternate ways to use the command you chose. "
 
   Output: "Certainly! Let's delve into some interesting command-line options for less, find, and grep.
 
