@@ -18,7 +18,7 @@ Here, we have some screenshots of `StringServer` in action. `HandleRequest()` ge
 
  ![Image](screenshots/Lab2D.PNG) 
 
-Above, we can see the path to both the public and private key for my SSH key for logging into ieng6. The path to the public key is `/c/Users/goori/.ssh/id_rsa.pub` and the path to the private key `/c/Users/goori/.ssh/id_rsa` is Very cool. 
+Above, we can see the path to both the public and private key for my SSH key for logging into ieng6. The path to the public key is `/c/Users/goori/.ssh/id_rsa.pub` and the path to the private key is `/c/Users/goori/.ssh/id_rsa`. Very cool. 
 
 ![Image](screenshots/Lab2E.PNG)
 
