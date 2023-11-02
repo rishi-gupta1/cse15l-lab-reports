@@ -22,7 +22,7 @@ Above, we can see the path to both the public and private key for my SSH key for
 
 ![Image](screenshots/Lab2E.PNG)
 
-Above, we can see the path to the public key withing my account on `ieng6`. Also very cool.
+Above, we can see the path to the public key with my account on `ieng6`. Also very cool.
 
  ![Image](screenshots/Lab2F.PNG) 
 
