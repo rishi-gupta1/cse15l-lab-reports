@@ -28,7 +28,7 @@ INSERT SCREENSHOT OF TEST
 
 Below is the problematic code that's failing these easy tests(can't relate). 
 
-  ```
+  ```java
   static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
     double lowest = arr[0];
@@ -45,6 +45,7 @@ Below is the problematic code that's failing these easy tests(can't relate).
 
 Below is the super cool code that aces all the tests, no matter how difficult(manifesting the same for myself).
 
+  ```java
   static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
     double lowest = arr[0];
@@ -58,6 +59,7 @@ Below is the super cool code that aces all the tests, no matter how difficult(ma
     sum -= lowest;
     return sum / (arr.length - 1);
   }
+```
 
 The old method would just skip any value that was equal to lowest. The new method would not skip any values, but instead manually remove the value of the lowest from the sum a total of one time. Ok now we're done with bugs, bzzzzzzzzzz. 
 
@@ -68,27 +70,32 @@ I get to use chatgpt on this part, so it's my favorite out of the two. I did use
 I feel like grep seems like a really useful command, so we are going to explore that for today. Let's go straight into it.
 
 1. `-i`
- 
+
+ ```bash
   $ grep -i "why" technical/911report/chapter-7.txt
 
   Why Hazmi and Mihdhar came to California, we do not know for certain. Khalid Sheikh
                 mid-July conversation, he denies knowing exactly why he received this
                 credible evidence explaining why, on this occasion and others, the operatives flew
                 after the 9/11 attacks, "I knew they were going to do something, that is why I got
+  ```  
 
 Here, all the lines containing "why" were returned including the line that included "Why" rather than "why". This is useful when we are looking for certain words or phrases, but do not care about capitalization. 
 
+  ```bash
   $ grep -i "EXCEssiVE" technical/government/Alcohol_Problems/Session3-PDF.txt
 
   Excessive alcohol consumption plays an important role in many of
   and patient plans to address excessive drinking. Prototypic
   for excessive drinkers: the need for caution. Alcohol Alcohol
   excessively. Second, the ED is a fast-paced environment in which
+  ```
 
 Again, we see that the inclusion of `-i` allows for case-sensitive searching when using `grep`. This feels like a staple to almost always include when using `grep`.
 
 2.`-v`
       
+  ```bash
   $ grep -v "a" technical/government/Media/Abuse_penalties.txt
 
   $100 fine.
@@ -99,6 +106,7 @@ Again, we see that the inclusion of `-i` allows for case-sensitive searching whe
   these problems.
   be spent include:
   serve PFAs during nonscheduled work hours, ensuring more expedient
+  ```
 
 
 
