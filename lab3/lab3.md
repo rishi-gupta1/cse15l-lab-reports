@@ -69,7 +69,7 @@ Part 2 - Researching Commands
 
 I get to use chatgpt on this part, so it's my favorite out of the two. I did use chatgpt for my research regarding each of the commands in this section and I have cited the inputs and outputs used at the bottom of this page. 
 
-I feel like grep seems like a really useful command, so we are going to explore that for today. Let's go straight into it.
+I feel like `grep` seems like a really useful command, so we are going to explore that for today. Let's go straight into it.
 
 1. `-i`
 
