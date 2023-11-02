@@ -14,11 +14,11 @@ I chose the bug from the `averageWithoutLowest` from `ArrayExamples.java`. The p
 
 Since this problem only arises when multiple values are tied for the lowest, a list with all unique values would not result in an error. Below is a faulty test that does not expose the bug.
 
-  @Test
-  public void testAverageWithoutLowest2() {
-    double[] input1 = {3, 4, 5, 6};
-    assertEquals(5.0, ArrayExamples.averageWithoutLowest(input1), .005);
-  }
+  ```java@Test```
+  ```public void testAverageWithoutLowest2() {```
+    ```double[] input1 = {3, 4, 5, 6};```
+    ```assertEquals(5.0, ArrayExamples.averageWithoutLowest(input1), .005);```
+  ```}```
 
 INSERT SCREENSHOT OF TEST
 
