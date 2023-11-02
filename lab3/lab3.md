@@ -6,11 +6,13 @@ Part 1 - Bugs Bzzzzzzz
 
 I chose the bug from the `averageWithoutLowest` from `ArrayExamples.java`. The problem was that if there were multiple instances of the lowest number in the inputted list, they were excluded from the sum, but not from the total number of counted numbers. This resulted in the averages being a lot lower than they should have been. Below, I have a test that exposes the bug.
 
+  ```java
   @Test
   public void testAverageWithoutLowest1() {
     double[] input1 = {4, 4, 5, 6};
     assertEquals(5.0, ArrayExamples.averageWithoutLowest(input1), .005);
   }
+```
 
 Since this problem only arises when multiple values are tied for the lowest, a list with all unique values would not result in an error. Below is a faulty test that does not expose the bug.
 
@@ -26,6 +28,7 @@ INSERT SCREENSHOT OF TEST
 
 Below is the problematic code that's failing these easy tests(can't relate). 
 
+  ```
   static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
     double lowest = arr[0];
@@ -38,6 +41,7 @@ Below is the problematic code that's failing these easy tests(can't relate).
     }
     return sum / (arr.length - 1);
   }
+```
 
 Below is the super cool code that aces all the tests, no matter how difficult(manifesting the same for myself).
 
