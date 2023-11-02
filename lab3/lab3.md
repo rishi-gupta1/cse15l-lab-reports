@@ -24,7 +24,9 @@ Since this problem only arises when multiple values are tied for the lowest, a l
   }
 ```
 
-INSERT SCREENSHOT OF TEST
+ ![Image](screenshots/Lab3A.PNG) 
+
+Above, we see the symptom as the bad code fails the test. Pfft, pitiful code. (I promise I'm funnier in person)
 
 Below is the problematic code that's failing these easy tests(can't relate). 
 
