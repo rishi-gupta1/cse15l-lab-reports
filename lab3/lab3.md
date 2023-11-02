@@ -1,6 +1,6 @@
 Hi! It's time for lab 3 so cool. Let's get on with it.
 
-Psst. INSERT JOKE
+Psst. This one is halloween edition. What's a vampire's favorite fruit? (Answer at the bottom).
 
 Part 1 - Bugs Bzzzzzzz
 
@@ -71,7 +71,7 @@ I feel like grep seems like a really useful command, so we are going to explore 
 
 1. `-i`
 
- ```bash
+ ```
   $ grep -i "why" technical/911report/chapter-7.txt
 
   Why Hazmi and Mihdhar came to California, we do not know for certain. Khalid Sheikh
@@ -82,7 +82,7 @@ I feel like grep seems like a really useful command, so we are going to explore 
 
 Here, all the lines containing "why" were returned including the line that included "Why" rather than "why". This is useful when we are looking for certain words or phrases, but do not care about capitalization. 
 
-  ```bash
+  ```
   $ grep -i "EXCEssiVE" technical/government/Alcohol_Problems/Session3-PDF.txt
 
   Excessive alcohol consumption plays an important role in many of
@@ -95,7 +95,7 @@ Again, we see that the inclusion of `-i` allows for case-sensitive searching whe
 
 2.`-v`
       
-  ```bash
+  ```
   $ grep -v "a" technical/government/Media/Abuse_penalties.txt
 
   $100 fine.
@@ -107,16 +107,97 @@ Again, we see that the inclusion of `-i` allows for case-sensitive searching whe
   be spent include:
   serve PFAs during nonscheduled work hours, ensuring more expedient
   ```
+`-v` returns all of the lines without the pattern being searched. In this example, we see that our command returned all of the lines without the letter "a". I feel like there might be fewer uses for `-v`, but there certainly are times when it would be helpful.
 
+  ```
+  $ grep -v "e" technical/government/Alcohol_Problems/Session2-PDF.txt
 
+  drinks on an occasion.4
+  drinks).
+  subgroups.
+  protocol.
+  1995. NIH Publication No. 95-3769.
+  trauma. JAMA 1993;270:51-6.
+  intoxication in alcoholics. J Consult Clin Psychol
+  1979;47:205-6.
+  1992;53:197-202.
+  1991;52:33-6.
+  1998;46:328-35.
+  JAMA. 1984;252: 1905-7.
+  1974;131:1121-3.
+  1972;129:342-8.
+  1971;127:1653-8.
+  1975;36:117-26.
+  1991;15:155-7.
+  With Harmful Alcohol Consumption, I. Addiction 1993;88:349-62.
+  (AUDIT). Addiction 1993;88:791-804.
+  1989;160:863-70.
+  2000;160:1977-89.
+  1995;19:628-34.
+  Alcohol 1995;56:695-700.
+  Psychiatry 1972;129:127-35.
+  Alcohol. 1998;33:304-9.
+  1996;11:426-30.
+  1994;15:303-10.
+  1987;35:864-9.
+  1999;36:33-9.
+  ```
+In this example, we see all the lines without the letter "e". I feel like there could be more use cases than I am displaying here, but I do not want the outputs to be too long and all of these text files are very long. (I say that and this output was super long, sorry)
 
+3. `-r`
 
+  ```
+  $ grep -r "crazy" technical
+
+  technical/911report/chapter-13.4.txt:                "ambitious, but not crazy."
+  technical/911report/chapter-3.txt:                "a wince." Schroen recalled Massoud's response as "You guys are crazy-you haven't
+  technical/biomed/1472-6882-1-10.txt:          become temporarily crazy. Based on experiences like
+  technical/government/Media/Assuring_Underprivileged.txt:fair to both sides. It sounds crazy, but that's not always how it
+  technical/government/Media/Politician_Practices.txt:Georgia governors. I was never crazy about Jimmy Carter while he
+  technical/plos/journal.pbio.0020101.txt:        look at you as if you are crazy. They see an idyllic, sentimental movie, with beautiful
+  ```
+(crazy? I was crazy once)
+Above, we see how using `-r` allowed us to search a pattern across an entire directory rather than just one file. This saves a lot of time when having multiple files to search through and seems like another staple when using `grep`.
+
+  ```
+  $ grep -r "rubber" technical/plos
+
+  technical/plos/journal.pbio.0030050.txt:        fill human fossil skulls with vulcanised rubber and once it has set, we pull it out of the
+  technical/plos/journal.pbio.0030050.txt:        large hole at the base of the skull and the rubber snaps back into the shape of the skull”,
+  ```
+(a rubber room)
+Again we see that `-r` allows to check all of the files in a directory. Looking through directories for key information is a lot easier since it can look through groups of text files rather than searching through them one by one. 
+
+4. `-l`
+
+  ```
+  $ grep -rl "           rats." technical
+
+  technical/biomed/1471-2156-2-12.txt
+  technical/biomed/1471-2202-2-20.txt
+  technical/biomed/1472-6793-2-11.txt
+  technical/biomed/1476-511X-1-2.txt
+  ```
+  (a rubber room with rats)
+Funnily enough, I used `-r` in conjunction with `-l` to search the whole directory. `-l` returns the name of the file containing the line that matches the pattern rather than the line itself. This can be useful to see which files contain some key pattern if seeing the pattern is not necessary, which it often is not.
+
+  ```
+  $ grep -l "crazy" technical/911report/Chapter-1.txt technical/911report/Chapter-2.txt technical/911report/Chapter-3.txt
+
+  technical/911report/Chapter-3.txt
+  ```
+(crazy?)
+Again, using `-l` returns all the files that match the pattern. If we are not using `-r`, we have to list out each file to check individually, which can be quite annoying. `-l` seems like another staple when using `grep`, but generally to be used with `-r` rather than listing all the files.
+
+And that was 4 different modifiers to `grep`. Wow time flies, huh? Well, this concludes my third lab. As always, sorry for the terrible jokes and I hope you have a great day!
 
 Best,
 
   Rishi Gupta
 
-  Answer(to the joke): 
+Back to the riddle, what's a vampire's favorite fruit?
+
+A necktarine!
 
   Works Cited(Chatgpt inputs and outputs)
 
