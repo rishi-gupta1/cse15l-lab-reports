@@ -19,13 +19,13 @@ Part 1 - Debugging Scenario
 
 Student: Hey y'allll, wasssuuuup. I'm a student :) Anyways, I'm strugllin a lil bit with ma code. The input of my function is a range of divisors and a dividend. The function is to output all of the different quotients. But, the values are like not right. Like some of them are right, but then some of them aren't. I'm just like super confused. And then there's like an error that pops up and idk why. Can anyone help?? I think one of the divisors might cause it bug. 
 
-[INSERT SCREENSHOT A]
+![Image](screenshots/Lab5A.png)
 
 TA: Maybe try to test different specific divisors to isolate which divisor is causing the issue. Try doing one divisor at a time. Also, try to see which divisor-dividend pairs are causing the issue. What is the expected result, what is the actual result, and what data types are you using for the variables? Finally, please use more formal language; this is EdStem, not some personalized lab report.  
 
 Student: WOWWWWWIEEE THANK YOU SO MUCH FOR YOUR HELP!! I isolated the divisor that caused the problems and saw that it was 0. I see now that an issue arises when dividing a number by 0. Hence, the bug is that there is no protection regarding dividing by 0. The other issue stems from using integers. I see that the incorrect values are the ones where the expected values are decimals rather than integers. This means that the bug is using integers rather than doubles. 
 
-[INSERT SCREENSHOT B]
+![Image](screenshots/Lab5B.png)
 
 All Info regarding set up:
 
@@ -35,13 +35,13 @@ Directory structure needed: None
 
 Contents before fixing the bug:
 
-[INSERT SCREENSHOT A]
+![Image](screenshots/Lab5A.png)
 
 Line to trigger bug: `java LabReport5 -3 3 5`
 
 Description of what to edit to fix the bug
 
-[INSERT SCREENSHOT C]
+![Image](screenshots/Lab5C.png)
 
 PART 2
 
